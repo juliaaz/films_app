@@ -18,9 +18,10 @@ Module includes 7 different functions:
 |Function creates a map with 10(or less) film locations, user's location and a location in Zhytomyr city.|
 The last one is a main one and creates an html file  with different markers of locations. The others are for working with given data.
 ---------------------------------------------------------------------------------------------------------------------------------------
-
 |Example of usage|:
-
+--------------------------------------------------------------------------
+Warning!!!
+Program with newlocations.list works more than 2-3 minutes, so if you want to get a map quickly I recoomend using location.csv. Just uncomment lines 180-181.
 The user indicates for the films for which year he wants to build a map and his location as latitude and longitude (e.g. 49.83826,24.02324), and as a result receives an HTML file.
 User receives a message 'Please enter a year you would like to have a map for:' in order to input a year he/she would like to get movies of. (in example year input is 1978)
 Then user receives a new message 'Please enter your location (format: lat, long):' after which he/she has to input his/her location's latitude and longitude. (in example user input is 49.83826,24.02324)
@@ -31,7 +32,7 @@ After this, user receives a message:
     Finished. Please have look at the map (input_year)_movies_map.html"
 --------------------------------------------------------------------------
 Here is an example off input in a Terminal:
-![Photo](example_input.png?raw=true "An example of user's input and the terminals output")
+![Photo](images/example_input.png?raw=true "An example of user's input and the terminals output")
 ---------------------------------------------------------------------------------------------------------------------------------------
 |Result|
 
@@ -39,7 +40,7 @@ The result is a map with three layers: the films' locations, user's locations an
 
 Note: if user clicks on a marker of Zhytomyr's special place, you can click on an active url with text 'Welcome to Житомир' which sends user to the Youtube video which is called 'Гімн Житомира. Культурна версія'.
 Here is an example:
-![Photo](screenshot_of_zhytomyr.png?raw=true "Here is a special place in Zhytomyr oblast and a marker with an active url with text 'Welcome to Житомир'")
+![Photo](images/screenshot_of_zhytomyr.png?raw=true "Here is a special place in Zhytomyr oblast and a marker with an active url with text 'Welcome to Житомир'")
 
 Note2.0: Movie location markers have three different colors: green, yellow, red. The color depends on the insistence of the location from the user. :
 1. If the location is at a distance of up to 1500 km, the marker is green.
@@ -48,4 +49,4 @@ Note2.0: Movie location markers have three different colors: green, yellow, red.
 After clicking on a location marker, user receives a name of the movie that was filmed in that place.
 
 Here is an example:
-![text](screenshot_of_map.png?raw=true "You can see movie location markers with three different colors, user's location (created be input) and a location in Zhytomyr")
+![text](images/screenshot_of_map.png?raw=true "You can see movie location markers with three different colors, user's location (created be input) and a location in Zhytomyr")
